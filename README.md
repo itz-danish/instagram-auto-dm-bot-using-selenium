@@ -13,6 +13,10 @@
 
 ## Usage:
 
+- Copy the message that you want to send. It'll paste the message you copied and send it.
+
+  
+### Variables to edit:
 ```
 
 #Path of your chrome web driver
@@ -22,11 +26,12 @@ min_followers_limit = 125
 loginUsername = "yourUsername"
 loginPassword = "yourPassword"
 no_of_dm_to_send = 20
+#list of usernames to send DM
+target_lst = ['bts_x_blackpink_fan.47', 's_radha_krishna_premik', 'sumaira_14_khan']
 ```
 
-Set up the script by providing your <strong>Instagram username</strong>, <strong>password</strong>, and other parameters such as the <strong>number of DMs to send</strong>, <strong>path of your chrome webdriver</strong> and the <strong>minimum followers limit</strong>.
+Set up the script by providing your <strong>Instagram username</strong>, <strong>password</strong>, and other parameters such as the <strong>number of DMs to send</strong>, <strong>path of your chrome webdriver</strong>, the <strong>Target's usernames</strong> and the <strong>minimum followers limit</strong>.
 
-- Copy the message that you want to send. It'll paste the message you copied and send it.
   
 Run the script, and it will automate the process of logging in, searching for target profiles, sending DMs, and handling errors.
 
@@ -43,7 +48,7 @@ Run the script, and it will automate the process of logging in, searching for ta
 
 2. **Setup and Configuration:**
    2.1 Importing Libraries: The script imports necessary libraries including `webdriver` from Selenium, and various modules and functions.
-   2.2 Configuration Variables: Configuration variables like `chrome_webDriver_path`,  `min_followers_limit`, `loginUsername`, `loginPassword`, and `no_of_dm_to_send` are set to define parameters such as minimum follower count, login credentials, and the number of direct messages to send.
+   2.2 Configuration Variables: Configuration variables like `chrome_webDriver_path`,  `min_followers_limit`, `loginUsername`, `loginPassword`, `no_of_dm_to_send` and `target_lst` are set to define parameters such as he path of ypur chrome webdriver, minimum follower count, login credentials, the number of direct messages to send and the list of usernames to send your message.
 
 3. **WebDriver Initialization:**
    3.1 The script sets up a WebDriver for Chrome with custom options such as disabling images and plugins.
