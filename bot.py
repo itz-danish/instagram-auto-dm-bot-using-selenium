@@ -13,7 +13,8 @@ min_followers_limit = 125
 loginUsername = "yourUsername"
 loginPassword = "yourPassword"
 no_of_dm_to_send = 20
-
+#list of usernames to send DM
+target_lst = ['bts_x_blackpink_fan.47', 's_radha_krishna_premik', 'sumaira_14_khan']
 
 
 
@@ -30,8 +31,6 @@ no_of_low_profile_ids = 0
 total_no_of_targets_hit = 0
 driver.get("https://www.instagram.com/")
 
-#list of usernames to send DM
-target_lst = ['bts_x_blackpink_fan.47', 's_radha_krishna_premik', 'sumaira_14_khan']
 
 target_lst = list(set(target_lst))
 
