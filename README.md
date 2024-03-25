@@ -36,7 +36,7 @@ pip install time
 
 
   
-2. **Edit the variables**
+2. **Edit the variables in bot.py**
 ```
 
 # Path of your chrome web driver
@@ -55,7 +55,8 @@ target_lst = ['bts_x_blackpink_fan.47', 's_radha_krishna_premik', 'sumaira_14_kh
 Set up the script by providing your <strong>Instagram username</strong>, <strong>password</strong>, and other parameters such as the <strong>number of DMs to send</strong>, <strong>path of your chrome webdriver</strong>, the <strong>Target's usernames</strong> and the <strong>minimum followers limit</strong>.
 
   
-Run the script, and it will automate the process of logging in, searching for target profiles, sending DMs, and handling errors.
+Run `bot.py`, and it will automate the process of logging in, searching for target profiles, sending DMs, and handling errors.
+
 
 ## Dependencies:
 
