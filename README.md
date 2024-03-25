@@ -13,22 +13,44 @@
 
 ## Usage:
 
-- Copy the message that you want to send. It'll paste the message you copied and send it.
+1. **Install all required libraries:**
+```
+# Install Selenium
+pip install selenium
 
-  
-### Variables to edit:
+# Download supported version of Chrome WebDriver with the version of your Chrome browser, e.g., 97 for Chrome version 97.
+# You can find your Chrome version by going to Chrome -> Help -> About Google Chrome.
+# Make sure to download the corresponding WebDriver version.
+# Visit https://sites.google.com/a/chromium.org/chromedriver/downloads to get the latest version.
+```
+```
+# install random
+pip install random
+```
+```
+# install time
+pip install time
 ```
 
-#Path of your chrome web driver
+
+
+
+  
+2. **Edit the variables**
+```
+
+# Path of your chrome web driver
 chrome_webDriver_path = "path of your chrome webdriver"
-#eg.- "C:\\Users\\danish\\Downloads\\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe"
+# eg.- "C:\\Users\\danish\\Downloads\\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe"
 min_followers_limit = 125
 loginUsername = "yourUsername"
 loginPassword = "yourPassword"
 no_of_dm_to_send = 20
-#list of usernames to send DM
+# list of usernames to send DM
 target_lst = ['bts_x_blackpink_fan.47', 's_radha_krishna_premik', 'sumaira_14_khan']
 ```
+
+3.  **Copy the message that you want to send. It'll paste the message you copied and send it to each targets.**
 
 Set up the script by providing your <strong>Instagram username</strong>, <strong>password</strong>, and other parameters such as the <strong>number of DMs to send</strong>, <strong>path of your chrome webdriver</strong>, the <strong>Target's usernames</strong> and the <strong>minimum followers limit</strong>.
 
@@ -72,7 +94,7 @@ Run the script, and it will automate the process of logging in, searching for ta
 7. **Conclusion:**
    7.1 Once the desired number of direct messages is sent or all target accounts are processed, the script terminates with an appropriate message.
 
-### Made with ❤️ by <strong>MOHAMMAD DANISH</strong>
+### <center>Made with ❤️ by <strong>MOHAMMAD DANISH</strong></center>
 
 [Instagram](https://instagram.com/_itz_danish_ "Author's Instagram")
 
