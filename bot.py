@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
-from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException
+from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException, StaleElementReferenceException
 import time
 import random
 
@@ -183,7 +183,9 @@ for target in target_lst:
     except NoSuchElementException:
         print("Message not allowed... Skipping to next profile...")
         continue
-    
+    except StaleElementReferenceException:
+        print("Message not allowed... Skipping to next profile...")
+        continue
     #Trying to send the message
     try:
         time.sleep(1)
